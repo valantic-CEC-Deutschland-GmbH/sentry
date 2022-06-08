@@ -1,0 +1,60 @@
+{
+    "name": "valantic-spryker/sentry",
+    "type": "library",
+    "description": "Sentry integration as a Spryker monitoring implementation",
+    "homepage": "https://www.valantic.com",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3",
+        "sentry/sdk": "^3.2",
+        "spryker/kernel": "^3.61",
+        "spryker/monitoring": "^2.3"
+    },
+    "require-dev": {
+        "codeception/module-asserts": "^1.3.0",
+        "codeception/stub": "^3.6.1",
+        "phpstan/phpstan": "^1.0.0",
+        "spryker/code-sniffer": "^0.17.1",
+        "spryker/testify": "^3.40.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ValanticSpryker\\": "src/ValanticSpryker/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ValanticSprykerTest\\": "tests/ValanticSprykerTest/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/codecept run",
+        "stan": "phpstan analyse",
+        "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/ tests/",
+        "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/ tests/"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "gitlab-domains": [
+            "gitlab.nxs360.com"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Valantic",
+            "homepage": "https://www.valantic.com"
+        }
+    ],
+    "keywords": [
+        "spryker",
+        "sentry"
+    ],
+    "include-path": [
+        "src/"
+    ]
+}
