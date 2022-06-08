@@ -12,7 +12,7 @@ class UnreportableException extends Exception
     /**
      * @param \Throwable $throwable
      *
-     * @return static
+     * @return \ValanticSpryker\Service\Sentry\Exception\UnreportableException
      */
     public static function fromThrowable(Throwable $throwable): self
     {

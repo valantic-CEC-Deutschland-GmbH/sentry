@@ -4,9 +4,5 @@ parameters:
         - src/
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
-    ignoreErrors:
-            - '#Call to method priceProduct\(\) on an unknown class .+AutoCompletion#'
-            - '#Call to method customerGroup\(\) on an unknown class .+AutoCompletion#'
-            - '#Call to method cart\(\) on an unknown class .+AutoCompletion#'
     bootstrapFiles:
         - tests/bootstrap.php
