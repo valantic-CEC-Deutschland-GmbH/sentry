@@ -14,7 +14,7 @@ class SentryConfig extends AbstractBundleConfig
      */
     public function getDataSourceName(): string
     {
-        return $this->get(SentryConstants::DSN);
+        return $this->get(SentryConstants::PROJECT_DSN);
     }
 
     /**
@@ -52,7 +52,7 @@ class SentryConfig extends AbstractBundleConfig
     /**
      * @return int
      */
-    public function getErrorTypes()
+    public function getErrorTypes(): int
     {
         return E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED;
     }
