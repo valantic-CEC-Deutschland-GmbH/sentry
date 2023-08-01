@@ -8,7 +8,7 @@ A Sentry monitoring extension for Spryker, refer to https://sentry.io/
 
 ### Install package
 ```
-composer req valantic-cec/sentry
+composer req valantic-spryker-eco/sentry
 ```
 
 ### Update your shared config
