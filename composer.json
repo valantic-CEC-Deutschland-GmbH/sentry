@@ -39,10 +39,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
-        },
-        "gitlab-domains": [
-            "gitlab.nxs360.com"
-        ]
+        }
     },
     "authors": [
         {
