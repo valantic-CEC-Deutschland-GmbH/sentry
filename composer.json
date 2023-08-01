@@ -1,9 +1,9 @@
 {
-    "name": "valantic-spryker/sentry",
+    "name": "valantic-cec/sentry",
     "type": "library",
     "description": "Sentry integration as a Spryker monitoring implementation",
     "homepage": "https://www.valantic.com",
-    "license": "MIT",
+    "license": "proprietary",
     "require": {
         "php": ">=7.3",
         "sentry/sdk": "^3.2",
