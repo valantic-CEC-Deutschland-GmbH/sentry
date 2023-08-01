@@ -1,5 +1,5 @@
 {
-    "name": "valantic-cec/sentry",
+    "name": "valantic-spryker-eco/sentry",
     "type": "library",
     "description": "Sentry integration as a Spryker monitoring implementation",
     "homepage": "https://www.valantic.com",
