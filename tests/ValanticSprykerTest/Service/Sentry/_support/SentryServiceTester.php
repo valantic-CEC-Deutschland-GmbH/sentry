@@ -1,6 +1,6 @@
 <?php
 
-namespace TurbineTest\Service\Sentry;
+namespace ValanticSprykerTest\Service\Sentry;
 
 use Codeception\Actor;
 
