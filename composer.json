@@ -30,7 +30,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "test": "vendor/bin/codecept run",
+        "test": [
+            "vendor/bin/codecept build",
+            "vendor/bin/codecept run"
+        ],
         "stan": "phpstan analyse",
         "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/ tests/",
         "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/ tests/"
