@@ -54,6 +54,8 @@ class SentryDependencyProvider extends AbstractBundleDependencyProvider
                 'traces_sample_rate' => $this->getConfig()->getTraceSampleRate(),
                 'capture_silenced_errors' => $this->getConfig()->getCaptureSilencedErrors(),
                 'error_types' => $this->getConfig()->getErrorTypes(),
+                'http_timeout' => $this->getConfig()->getHttpTimeout(),
+                'http_connect_timeout' => $this->getConfig()->getHttpConnectTimeout(),
             ];
 
             $clientBuilder = ClientBuilder::create($options);

@@ -26,7 +26,7 @@ class SentryConfig extends AbstractBundleConfig
     }
 
     /**
-     * @return string[]
+     * @return array<string>
      */
     public function getIgnoredExceptions(): array
     {
@@ -63,5 +63,21 @@ class SentryConfig extends AbstractBundleConfig
     public function getCaptureSilencedErrors(): bool
     {
         return false;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHttpTimeout(): int
+    {
+        return (int)$this->get(SentryConstants::HTTP_TIMEOUT, 5);
+    }
+
+    /**
+     * @return int
+     */
+    public function getHttpConnectTimeout(): int
+    {
+        return (int)$this->get(SentryConstants::HTTP_CONNECT_TIMEOUT, 2);
     }
 }
