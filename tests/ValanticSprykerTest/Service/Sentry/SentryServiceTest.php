@@ -41,7 +41,7 @@ class SentryServiceTest extends Unit
 
         $this->tester->setDependency(
             SentryDependencyProvider::SENTRY_HUB,
-            $hubMock
+            $hubMock,
         );
 
         return $hubMock;
@@ -89,7 +89,7 @@ class SentryServiceTest extends Unit
         $exception = new Exception('example exception');
         $this->tester->setConfig(
             SentryConstants::IGNORED_EXCEPTIONS,
-            [ Exception::class]
+            [Exception::class],
         );
 
         $mock

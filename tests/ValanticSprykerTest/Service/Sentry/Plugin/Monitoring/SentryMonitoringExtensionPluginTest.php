@@ -5,10 +5,6 @@ declare(strict_types = 1);
 namespace ValanticSprykerTest\Service\Sentry\Plugin\Monitoring;
 
 use Codeception\Test\Unit;
-use Exception;
-use ValanticSpryker\Service\Sentry\Plugin\Monitoring\SentryMonitoringExtensionPlugin;
-use ValanticSpryker\Service\Sentry\SentryService;
-use ValanticSpryker\Service\Sentry\SentryServiceInterface;
 
 /**
  * Auto-generated group annotations
@@ -30,5 +26,4 @@ class SentryMonitoringExtensionPluginTest extends Unit
     {
         self::markTestSkipped('Not implemented, yet.');
     }
-
 }

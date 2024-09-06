@@ -28,7 +28,7 @@ class SentryServiceFactory extends AbstractServiceFactory
     public function createSentryGateway(): SentryGateway
     {
         return new SentryGateway(
-            $this->getSentryHub()
+            $this->getSentryHub(),
         );
     }
 
@@ -39,7 +39,7 @@ class SentryServiceFactory extends AbstractServiceFactory
     {
         return new SentryExceptionHandler(
             $this->createSentryGateway(),
-            $this->getConfig()
+            $this->getConfig(),
         );
     }
 }
