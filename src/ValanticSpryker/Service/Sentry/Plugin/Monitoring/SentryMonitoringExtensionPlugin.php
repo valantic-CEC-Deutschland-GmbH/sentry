@@ -63,7 +63,7 @@ class SentryMonitoringExtensionPlugin extends AbstractPlugin implements Monitori
     public function markStartTransaction(): void
     {
         // TODO: Add sentry distributed tracing
-        $context = TransactionContext::fromSentryTrace('');
+        $context = TransactionContext::make();
 
         $context->setOp('http.server');
         $context->setName($this->transactionName);
