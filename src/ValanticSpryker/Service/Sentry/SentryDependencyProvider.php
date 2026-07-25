@@ -76,7 +76,7 @@ class SentryDependencyProvider extends AbstractBundleDependencyProvider
     private function addSentryHub(Container $container): Container
     {
         $container->set(self::SENTRY_HUB, function (Container $container) {
-            /** @var \Sentry\ClientBuilderInterface $clientBuilder */
+            /** @var \Sentry\ClientBuilder $clientBuilder */
             $clientBuilder = $container->get(self::SENTRY_CLIENT_BUILDER);
 
             $hub = new Hub($clientBuilder->getClient());

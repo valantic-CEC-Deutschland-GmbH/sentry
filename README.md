@@ -13,7 +13,7 @@ composer req valantic-spryker-eco/sentry
 
 ### Update your shared config
 ```php
-$config[KernelConstants::PROJECT_NAMESPACES] = [
+$config[KernelConstants::CORE_NAMESPACES] = [
     'ValanticSpryker',
     ...
 ];
